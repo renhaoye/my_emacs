@@ -1,0 +1,117 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Mar 19 22:39:13 2016
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((50 . "") (48 . "")))
+(setq file-name-history '("e:/Work/src/WireLess_Log/w_log.h" "e:/Work/src/WireLess_Log/log_rec.c" "e:/Work/src/find.c" "e:/Work/src/test.c" "e:/src/linux-3.14/linux-3.14/drivers/usb/misc/adutux.c" "~/.emacs.d/elpa/ascope-20130824.1158/ascope-autoloads.el" "e:/src/linux-3.14/linux-3.14/kernel/audit_tree.c" "e:/src/linux-3.14/linux-3.14/start.c" "e:/src/linux-3.14/linux-3.14/kernel/sysctl_binary.c" "e:/src/linux-3.14/linux-3.14/kernel/Makefile" "e:/src/linux-3.14/linux-3.14/kernel/audit.h" "e:/src/linux-3.14/linux-3.14/kernel/audit.c" "e:/src/" "e:/src/system_programmer/1/4/embrace_change/main.c" "e:/src/system_programmer/1/4/embrace_change/dlist.c" "e:/src/system_programmer/1/4/embrace_change/dlist.h" "e:/src/system_programmer/1/4/embrace_change/Makefile" "e:/src/system_programmer/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "e:/Work/src/WireLess_Log/w_log.h"
+  "w_log.h"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  378
+  '(378 t)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/Work/src/WireLess_Log/log_rec.c"
+  "log_rec.c"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  594
+  '(583 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-dos) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/Work/src/find.c"
+  "find.c"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  521
+  '(128 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-dos) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/Work/src/test.c"
+  "test.c"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  1291
+  '(334 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-dos) (overwrite-mode) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/src/linux-3.14/linux-3.14/kernel/audit.c"
+  "audit.c"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  22471
+  '(21429 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/src/linux-3.14/linux-3.14/kernel/sysctl_binary.c"
+  "sysctl_binary.c"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  47456
+  '(50536 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/src/linux-3.14/linux-3.14/kernel/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode global-auto-revert-mode)
+  995
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "e:/src/linux-3.14/linux-3.14/kernel/audit.h"
+  "audit.h"
+  'c-mode
+  '(abbrev-mode visual-line-mode global-visual-line-mode undo-tree-mode smartparens-mode projectile-mode yas-minor-mode auto-complete-mode global-auto-revert-mode linum-mode hs-minor-mode)
+  207
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  nil
+  "src"
+  'dired-mode
+  '(visual-line-mode global-visual-line-mode projectile-mode yas-minor-mode global-auto-revert-mode)
+  186
+  '(nil nil)
+  t
+  '("e:/src/")
+  '((truncate-lines)))
+

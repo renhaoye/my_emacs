@@ -1,0 +1,1099 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "audit.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("pr_fmt" variable (:constant-flag t) nil [1968 1974])
+            ("linux/init.h" include (:system-flag t) nil [2005 2028])
+            ("asm/types.h" include (:system-flag t) nil [2029 2051])
+            ("linux/atomic.h" include (:system-flag t) nil [2052 2077])
+            ("linux/mm.h" include (:system-flag t) nil [2078 2099])
+            ("linux/export.h" include (:system-flag t) nil [2100 2125])
+            ("linux/slab.h" include (:system-flag t) nil [2126 2149])
+            ("linux/err.h" include (:system-flag t) nil [2150 2172])
+            ("linux/kthread.h" include (:system-flag t) nil [2173 2199])
+            ("linux/kernel.h" include (:system-flag t) nil [2200 2225])
+            ("linux/syscalls.h" include (:system-flag t) nil [2226 2253])
+            ("linux/audit.h" include (:system-flag t) nil [2255 2279])
+            ("net/sock.h" include (:system-flag t) nil [2281 2302])
+            ("net/netlink.h" include (:system-flag t) nil [2303 2327])
+            ("linux/skbuff.h" include (:system-flag t) nil [2328 2353])
+            ("linux/freezer.h" include (:system-flag t) nil [2412 2438])
+            ("linux/tty.h" include (:system-flag t) nil [2439 2461])
+            ("linux/pid_namespace.h" include (:system-flag t) nil [2462 2494])
+            ("net/netns/generic.h" include (:system-flag t) nil [2495 2525])
+            ("audit.h" include nil nil [2527 2545])
+            ("AUDIT_DISABLED" variable (:constant-flag t) nil [2689 2703])
+            ("AUDIT_UNINITIALIZED" variable (:constant-flag t) nil [2716 2735])
+            ("AUDIT_INITIALIZED" variable (:constant-flag t) nil [2746 2763])
+            ("audit_initialized" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2766 2795])
+            ("AUDIT_OFF" variable (:constant-flag t) nil [2805 2814])
+            ("AUDIT_ON" variable (:constant-flag t) nil [2825 2833])
+            ("AUDIT_LOCKED" variable (:constant-flag t) nil [2844 2856])
+            ("audit_enabled" variable (:type ("u32" type (:type "class") nil nil)) nil [2859 2878])
+            ("audit_ever_enabled" variable (:type ("u32" type (:type "class") nil nil)) nil [2879 2903])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_enabled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2923 2937]))                  
+                :type "int")
+                nil [2905 2938])
+            ("audit_default" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3002 3027])
+            ("audit_failure" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3099 3144])
+            ("audit_pid" variable (:type "int") nil [3359 3374])
+            ("audit_nlk_portid" variable
+               (:typemodifiers ("static")
+                :type ("__u32" type (:type "class") nil nil))
+                nil [3375 3405])
+            ("audit_rate_limit" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3591 3619])
+            ("audit_backlog_limit" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3715 3751])
+            ("AUDIT_BACKLOG_WAIT_TIME" variable (:constant-flag t) nil [3760 3783])
+            ("audit_backlog_wait_time" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3794 3855])
+            ("audit_backlog_wait_overflow" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [3856 3899])
+            ("audit_sig_uid" variable (:type ("kuid_t" type (:type "class") nil nil)) nil [3964 4000])
+            ("audit_sig_pid" variable (:type ("pid_t" type (:type "class") nil nil)) nil [4001 4027])
+            ("audit_sig_sid" variable (:type ("u32" type (:type "class") nil nil)) nil [4028 4051])
+            ("audit_lost" variable
+               (:typemodifiers ("static")
+                :type ("atomic_t" type (:type "class") nil nil))
+                nil [4337 4384])
+            ("audit_sock" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("sock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4412 4443])
+            ("audit_net_id" variable (:type "int") nil [4444 4461])
+            ("audit_inode_hash" variable
+               (:dereference 1
+                :type ("list_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4496 4551])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("audit_freelist_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4756 4776]))                  
+                :type "int")
+                nil [4733 4777])
+            ("audit_freelist_count" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [4778 4813])
+            ("LIST_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("audit_freelist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4831 4846]))                  
+                :type "int")
+                nil [4814 4847])
+            ("audit_skb_queue" variable
+               (:typemodifiers ("static")
+                :type ("sk_buff_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4849 4892])
+            ("audit_skb_hold_queue" variable
+               (:typemodifiers ("static")
+                :type ("sk_buff_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4953 5001])
+            ("kauditd_task" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("task_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5002 5042])
+            ("DECLARE_WAIT_QUEUE_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("kauditd_wait" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5074 5087]))                  
+                :type "int")
+                nil [5043 5088])
+            ("DECLARE_WAIT_QUEUE_HEAD" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("audit_backlog_wait" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5120 5139]))                  
+                :type "int")
+                nil [5089 5140])
+            ("af" variable
+               (:typemodifiers ("static")
+                :type ("audit_features" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5142 5268])
+            ("audit_feature_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5270 5359])
+            ("DEFINE_MUTEX" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_cmd_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5416 5432]))                  
+                :type "int")
+                nil [5403 5433])
+            ("AUDIT_BUFSIZ" variable (:constant-flag t) nil [5621 5633])
+            ("AUDIT_MAXFREE" variable (:constant-flag t) nil [5786 5799])
+            ("audit_buffer" type
+               (:members 
+                  ( ("list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6149 6175])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6177 6203])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6239 6265])
+                    ("gfp_mask" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6300 6321]))                  
+                :type "struct")
+                nil [6126 6324])
+            ("audit_reply" type
+               (:members 
+                  ( ("portid" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6348 6361])
+                    ("net" variable
+                       (:pointer 1
+                        :type ("net" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6363 6379])
+                    ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6382 6402]))                  
+                :type "struct")
+                nil [6326 6405])
+            ("audit_set_portid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6436 6460])
+                    ("portid" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6461 6474]))                  
+                :type "void")
+                nil [6407 6564])
+            ("audit_panic" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6583 6603]))                  
+                :type "void")
+                nil [6566 6907])
+            ("audit_rate_check" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6944 6949]))                  
+                :type "int")
+                nil [6909 7469])
+            ("audit_log_lost" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7756 7776]))                  
+                :type "void")
+                nil [7736 8396])
+            ("audit_log_config_change" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("function_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8433 8453])
+                    ("" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8454 8461])
+                    ("old" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8463 8471])
+                    ("allow_changes" variable (:type "int") (reparse-symbol arg-sub-list) [8479 8497]))                  
+                :type "int")
+                nil [8398 8910])
+            ("audit_do_config_change" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("function_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8946 8966])
+                    ("to_change" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8967 8982])
+                    ("" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8983 8990]))                  
+                :type "int")
+                nil [8912 9472])
+            ("audit_set_rate_limit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("limit" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9506 9516]))                  
+                :type "int")
+                nil [9474 9598])
+            ("audit_set_backlog_limit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("limit" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9635 9645]))                  
+                :type "int")
+                nil [9600 9733])
+            ("audit_set_backlog_wait_time" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timeout" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9774 9786]))                  
+                :type "int")
+                nil [9735 9894])
+            ("audit_set_enabled" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9925 9935]))                  
+                :type "int")
+                nil [9896 10142])
+            ("audit_set_failure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10173 10183]))                  
+                :type "int")
+                nil [10144 10380])
+            ("audit_hold_skb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10916 10936]))                  
+                :type "void")
+                nil [10889 11129])
+            ("audit_printk_skb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11287 11307]))                  
+                :type "void")
+                nil [11258 11578])
+            ("kauditd_send_skb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11609 11629]))                  
+                :type "void")
+                nil [11580 12178])
+            ("flush_hold_queue" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12877 12882]))                  
+                :type "void")
+                nil [12848 13246])
+            ("kauditd_thread" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13274 13286]))                  
+                :type "int")
+                nil [13248 13930])
+            ("audit_send_list" function
+               (:arguments 
+                  ( ("_dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13952 13964]))                  
+                :type "int")
+                nil [13932 14381])
+            ("audit_make_reply" function
+               (:pointer 1
+                :arguments 
+                  ( ("portid" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14416 14429])
+                    ("seq" variable (:type "int") (reparse-symbol arg-sub-list) [14430 14438])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [14439 14448])
+                    ("done" variable (:type "int") (reparse-symbol arg-sub-list) [14449 14458])
+                    ("multi" variable (:type "int") (reparse-symbol arg-sub-list) [14464 14474])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14475 14495])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [14496 14505]))                  
+                :type ("sk_buff" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14383 14913])
+            ("audit_send_reply_thread" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14950 14960]))                  
+                :type "int")
+                nil [14915 15389])
+            ("audit_send_reply" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("request_skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15842 15870])
+                    ("seq" variable (:type "int") (reparse-symbol arg-sub-list) [15871 15879])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [15880 15889])
+                    ("done" variable (:type "int") (reparse-symbol arg-sub-list) [15890 15899])
+                    ("multi" variable (:type "int") (reparse-symbol arg-sub-list) [15908 15918])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15919 15939])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [15940 15949]))                  
+                :type "void")
+                nil [15813 16523])
+            ("audit_netlink_ok" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16648 16668])
+                    ("msg_type" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16669 16682]))                  
+                :type "int")
+                nil [16620 18056])
+            ("audit_log_common_recv_msg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 2
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18095 18120])
+                    ("msg_type" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18121 18134]))                  
+                :type "int")
+                nil [18058 18519])
+            ("is_audit_feature_set" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [18546 18552]))                  
+                :type "int")
+                nil [18521 18604])
+            ("audit_get_feature" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18636 18656]))                  
+                :type "int")
+                nil [18607 18781])
+            ("audit_log_feature_change" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("which" variable (:type "int") (reparse-symbol arg-sub-list) [18820 18830])
+                    ("old_feature" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18831 18847])
+                    ("new_feature" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18848 18864])
+                    ("old_lock" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18874 18887])
+                    ("new_lock" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18888 18901])
+                    ("res" variable (:type "int") (reparse-symbol arg-sub-list) [18902 18910]))                  
+                :type "void")
+                nil [18783 19280])
+            ("audit_set_feature" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19311 19331]))                  
+                :type "int")
+                nil [19282 20857])
+            ("audit_receive_msg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20888 20908])
+                    ("nlh" variable
+                       (:pointer 1
+                        :type ("nlmsghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20909 20930]))                  
+                :type "int")
+                nil [20859 28011])
+            ("audit_receive_skb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28184 28204]))                  
+                :type "void")
+                nil [28154 28643])
+            ("audit_receive" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("skb" variable
+                       (:pointer 1
+                        :type ("sk_buff" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28715 28736]))                  
+                :type "void")
+                nil [28689 28829])
+            ("audit_net_init" function
+               (:arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("net" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28868 28884]))                  
+                :type ("__net_init" type (:type "class") nil nil))
+                nil [28842 29252])
+            ("audit_net_exit" function
+               (:arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("net" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29292 29308]))                  
+                :type ("__net_exit" type (:type "class") nil nil))
+                nil [29266 29565])
+            ("__net_initdata" variable (:type ("audit_net_ops" type (:type "class") nil nil)) nil [29599 29741])
+            ("audit_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29817 29822]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [29799 30375])
+            ("__initcall" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30387 30398]))                  
+                :type "int")
+                nil [30376 30399])
+            ("audit_enable" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30511 30521]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [30491 30743])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_enable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30762 30775]))                  
+                :type "int")
+                nil [30744 30776])
+            ("audit_backlog_limit_set" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30905 30915]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [30874 31238])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_backlog_limit_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31271 31295]))                  
+                :type "int")
+                nil [31239 31296])
+            ("audit_buffer_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31328 31352]))                  
+                :type "void")
+                nil [31298 31673])
+            ("audit_buffer_alloc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31723 31749])
+                    ("gfp_mask" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31756 31771])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [31772 31781]))                  
+                :type ("audit_buffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [31675 32512])
+            ("audit_serial" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33354 33359]))                  
+                :type "unsigned int")
+                nil [33328 33629])
+            ("audit_get_stamp" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33666 33692])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33700 33719])
+                    ("serial" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [33720 33741]))                  
+                :type "void")
+                nil [33631 33848])
+            ("wait_for_auditd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sleep_time" variable (:type "long") (reparse-symbol arg-sub-list) [33932 33948]))                  
+                :type "long")
+                nil [33904 34324])
+            ("audit_log_start" function
+               (:pointer 1
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34969 34995])
+                    ("gfp_mask" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34996 35011])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [35021 35030]))                  
+                :type ("audit_buffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34932 36545])
+            ("audit_expand" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36784 36808])
+                    ("extra" variable (:type "int") (reparse-symbol arg-sub-list) [36809 36819]))                  
+                :type "int")
+                nil [36753 37119])
+            ("audit_log_vformat" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37438 37462])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37463 37479])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37489 37502]))                  
+                :type "void")
+                nil [37408 38257])
+            ("audit_log_format" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38494 38518])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38519 38535])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [38536 38540]))                  
+                :type "void")
+                nil [38472 38652])
+            ("audit_log_n_hex" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39055 39079])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [39080 39105])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39108 39119]))                  
+                :type "void")
+                nil [39034 39681])
+            ("audit_log_n_string" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39816 39840])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39841 39860])
+                    ("slen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39864 39876]))                  
+                :type "void")
+                nil [39792 40354])
+            ("audit_string_contains_control" function
+               (:arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40548 40567])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40568 40579]))                  
+                :type "int")
+                nil [40514 40744])
+            ("audit_log_n_untrustedstring" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41390 41414])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41415 41434])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41440 41451]))                  
+                :type "void")
+                nil [41357 41585])
+            ("audit_log_untrustedstring" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41861 41885])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41886 41905]))                  
+                :type "void")
+                nil [41830 41967])
+            ("audit_log_d_path" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42051 42075])
+                    ("prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42076 42095])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("path" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42104 42128]))                  
+                :type "void")
+                nil [42029 42646])
+            ("audit_log_session_info" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42676 42700]))                  
+                :type "void")
+                nil [42648 42889])
+            ("audit_log_key" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42910 42934])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42935 42945]))                  
+                :type "void")
+                nil [42891 43069])
+            ("audit_log_cap" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43090 43114])
+                    ("prefix" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43115 43128])
+                    ("cap" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43129 43147]))                  
+                :type "void")
+                nil [43071 43305])
+            ("audit_log_fcaps" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43328 43352])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("audit_names" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43353 43378]))                  
+                :type "void")
+                nil [43307 43741])
+            ("audit_copy_fcaps" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type ("audit_names" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43778 43803])
+                    ("dentry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43811 43839]))                  
+                :type "int")
+                nil [43743 44228])
+            ("audit_copy_inode" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type ("audit_names" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44295 44320])
+                    ("dentry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44321 44349])
+                    ("inode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44358 44384]))                  
+                :type "void")
+                nil [44273 44649])
+            ("audit_log_name" function
+               (:arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45051 45081])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("audit_names" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45082 45104])
+                    ("path" variable
+                       (:pointer 1
+                        :type ("path" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45111 45129])
+                    ("record_num" variable (:type "int") (reparse-symbol arg-sub-list) [45130 45145])
+                    ("call_panic" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [45146 45162]))                  
+                :type "void")
+                nil [45031 47049])
+            ("audit_log_task_context" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47078 47102]))                  
+                :type "int")
+                nil [47051 47517])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log_task_context" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47532 47555]))                  
+                :type "int")
+                nil [47518 47556])
+            ("audit_log_task_info" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47583 47607])
+                    ("tsk" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47608 47632]))                  
+                :type "void")
+                nil [47558 48934])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log_task_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48949 48969]))                  
+                :type "int")
+                nil [48935 48970])
+            ("audit_log_link_denied" function
+               (:arguments 
+                  ( ("operation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49156 49178])
+                    ("link" variable
+                       (:pointer 1
+                        :type ("path" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49179 49197]))                  
+                :type "void")
+                nil [49129 49847])
+            ("audit_log_end" function
+               (:arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("audit_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50174 50198]))                  
+                :type "void")
+                nil [50155 50591])
+            ("audit_log" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("audit_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50965 50991])
+                    ("gfp_mask" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50992 51007])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [51008 51017])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51026 51042])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [51043 51047]))                  
+                :type "void")
+                nil [50950 51247])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log_start" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52034 52050]))                  
+                :type "int")
+                nil [52020 52051])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log_end" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52066 52080]))                  
+                :type "int")
+                nil [52052 52081])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52096 52113]))                  
+                :type "int")
+                nil [52082 52114])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("audit_log" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52129 52139]))                  
+                :type "int")
+                nil [52115 52140]))          
+    :file "audit.c"
+    :pointmax 52141
+    :fsize 52140
+    :lastmodtime '(21304 58271 0 0)
+    :unmatched-syntax '((string 31247 . 31269) (INT 30870 . 30873) (STATIC 30863 . 30869) (string 30752 . 30760) (INT 30487 . 30490) (STATIC 30480 . 30486) (INT 29795 . 29798) (STATIC 29788 . 29794) (symbol 29581 . 29598) (STRUCT 29574 . 29580) (STATIC 29567 . 29573) (VOID 29261 . 29265) (STATIC 29254 . 29260) (INT 28838 . 28841) (STATIC 28831 . 28837) (NEW 8987 . 8990) (NEW 8458 . 8461))
+    :lexical-table 
+        '(("AUDIT_INITIALIZED" . ((number "1" 2764 . 2765)))
+          ("AUDIT_UNINITIALIZED" . ((number "0" 2736 . 2737)))
+          ("AUDIT_DISABLED" . ((punctuation "-" 2705 . 2706) (number "1" 2706 . 2707)))
+          ("AUDIT_OFF" . ((number "0" 2815 . 2816)))
+          ("AUDIT_ON" . ((number "1" 2834 . 2835)))
+          ("AUDIT_BACKLOG_WAIT_TIME" . ((semantic-list "(60 * HZ)" 3784 . 3793)))
+          ("AUDIT_BUFSIZ" . ((number "1024" 5634 . 5638)))
+          ("AUDIT_MAXFREE" . ((semantic-list "(2*NR_CPUS)" 5801 . 5812)))
+          ("pr_fmt" (spp-arg-list ("fmt") 1974 . 1979) . 
+              ((symbol "KBUILD_MODNAME" 1980 . 1994) (string "\": \"" 1995 . 1999) (symbol "fmt" 2000 . 2003)))
+          ("AUDIT_LOCKED" . ((number "2" 2857 . 2858)))
+          )
+
+    )
+   (semanticdb-table "audit.h"
+    :file "audit.h"
+    :fsize 10382
+    :lastmodtime '(21304 58271 0 0)
+    )
+   )
+  :file "!drive_e!src!linux-3.14!linux-3.14!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
